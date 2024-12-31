@@ -1,0 +1,47 @@
+# Build directories
+/build/
+/cmake-build-debug/
+/cmake-build-release/
+
+# CMake generated files
+CMakeCache.txt
+CMakeFiles/
+CMakeScripts/
+CTestTestfile.cmake
+Makefile
+cmake_install.cmake
+
+# Compiled object files
+*.o
+*.obj
+
+# Compiled dynamic libraries
+*.so
+*.dylib
+*.dll
+
+# Compiled static libraries
+*.lib
+*.a
+
+
+# IDE specific files
+.idea/
+*.iml
+
+# JetBrains CLion workspace files
+cmake-build-*/
+
+# Logs and temporary files
+*.log
+*.tmp
+*.swp
+*.swo
+
+# Backup files
+*.bak
+*~.nib
+*.~*
+
+# MacOS specific files
+.DS_Store
