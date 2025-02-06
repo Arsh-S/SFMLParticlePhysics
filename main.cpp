@@ -6,9 +6,9 @@
 #include <random>
 #include <optional>
 
-#include "Particle.h"
-#include "Solver.h"
-#include "Utils.h"
+#include "Particle.hpp"
+#include "Solver.hpp"
+#include "Utils.hpp"
 
 int main() {
     Solver solver;
@@ -17,7 +17,11 @@ int main() {
     sf::RenderWindow window(sf::VideoMode({1000, 1000}), "Basic Particle Physics System");
     window.setFramerateLimit(120);
 
-    const sf::Font font("./Resources/Arial.ttf");
+    // try loading Arial from ./Resources as sf::Font
+    sf::Font font;
+    if (!font.openFromFile("/System/Library/Fonts/Supplemental/Arial.ttf")) {
+        return 1;
+    }
 
     sf::Text fpsText(font, "FPS");
     fpsText.setCharacterSize(20);

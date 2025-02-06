@@ -2,7 +2,7 @@
 #define SOLVER_H
 
 #include <vector>
-#include "Particle.h"
+#include "Particle.hpp"
 
 struct Solver {
     std::vector<Particle> particles;

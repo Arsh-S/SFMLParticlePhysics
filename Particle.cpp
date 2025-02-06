@@ -1,4 +1,4 @@
-#include "Particle.h"
+#include "Particle.hpp"
 
 Particle::Particle(const sf::Vector2f pos, const sf::Vector2f velocity, const float rad)
     : position(pos), oldPosition(pos - velocity), radius(rad) {

@@ -1,4 +1,5 @@
-#include "Utils.h"
+#include "Utils.hpp"
+#include <SFML/Graphics.hpp>
 
 sf::Color hsvToRgb(const float hue, const float saturation, const float value) {
     const float c = value * saturation;

@@ -1,4 +1,4 @@
-#include "Solver.h"
+#include "Solver.hpp"
 
 void Solver::addParticle(const Particle &particle) {
     particles.push_back(particle);
